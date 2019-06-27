@@ -1,0 +1,11 @@
+import random
+
+num_list =[]
+list_length = random.randint(5,16)
+
+while len(num_list)<list_length:
+  num_list.append(random.randint(1,21))
+
+evenlist = [x for x in num_list if x%2 ==0]
+
+print (evenlist)
