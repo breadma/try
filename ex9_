@@ -1,0 +1,27 @@
+# Guessing game one
+
+import random
+
+ans = int(random.randint(1,100))
+print (ans)
+times = 10
+
+while times>0:
+  try:
+    num= int(input("Please input a number between 1 and 100."))
+    if num == ans:
+     print ("You guessed it right! You took only " + str(11-(times)) +" counts!")
+     break
+
+    if num>ans:
+     times -= 1
+     print ("Your guessed number is too large.")
+     print ("You have " + str(times) + " chances left.")
+    elif num<ans:
+      times -= 1
+      print ("Your guessed numbed is too small")
+      print ("You have " + str(times) + " chances left.")
+  except ValueError:
+    print ("Please input a valid number")
+  
+  
