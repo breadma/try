@@ -1,0 +1,6 @@
+word = input("Please input a word. \n")
+word = str(word)
+rvs = word[::-1]
+
+if word == rvs:
+  print ("This word is a palindrome.")
